@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <style>
+        
+        
+        .showpoint{
+            height: 170px;
+            display: flex;
+            justify-content:space-between;
+            color: #e4d4d4;
+            background-color: rgb(241, 38, 72);
+        }
+        .total{
+            margin-left: 10px;
+            padding:10px ;
+            font-size: 22px;
+        }
+        h1{
+            margin-top: 55px;
+            font-size: 50px;
+        }
+        .clock{
+            text-align: center;
+            width: 150px;
+
+        }
+        .clock p {
+            font-size: 30px;
+        }
+        .clock button{
+            width: 70px;
+            height: 25px;
+        }
+        ul{
+            list-style: none;
+            padding-left: 0;
+        }
+       li{
+        /* display:flex; */
+        height: 40px;
+        background-color: rgb(54, 185, 185);
+       }
+       li p{
+        font-size: 20px;
+        line-height: 5px;
+       }
+       li button{
+        width: 40px;
+        font-size: 30px;
+        height: 40px;
+
+       }
+       .big{
+        width: 40px;
+        text-align: center;
+       }
+       .input{
+        height: 80px;
+        background-color:rgb(241, 38, 72);
+        text-align: center;
+        
+       }
+       input{
+        width: 70%;
+        height: 30%;
+        color: #e4d4d4;
+        background-color: rgb(112, 5, 5);
+        margin-top: 25px;
+       }
+       .add{
+        height: 30px;
+        width: 150px;
+    }
+    .ngang{
+        display: flex;
+        justify-content: space-between;
+    }
+    .ngang1{
+        display: flex;
+    }
+    .ngang2{
+        display: flex;
+    }
+    #deletethongtin{
+        font-size: 16px;
+        width: 50px;
+        background-color: greenyellow;
+        border-radius: 10px;
+    }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="showpoint">
+            <div class="total">
+                <p>
+                    <span>Players:</span>
+                    <span id="toltalPlayer">3</span>
+                </p>
+                <p>
+                    <span>Total:</span>
+                    <span id="toltalPoint">0</span>
+                </p>
+            </div>
+            <div><h1>Rikkei Scoreboard</h1></div>
+            <div class="clock">
+                <h3>Stopwatch</h3>
+                <p id = "time">0</p>
+                <button onclick="start()" class="start">Start</button>
+                <button onclick="reset()" class="reset">Reset</button>
+            </div>
+        </div>
+        <div class="listusser">
+            <ul>
+              
+            </ul>
+        </div>
+        <div class="input">
+            <input id="addinfo" class="input1" type="text" placeholder="Enter a player name" >
+            <button class="add" onclick="showPlayer()">Thêm</button>
+        </div>
+    </div>
+    <script src="/js.js">
+          
+    </script>
+</body>
+</html>
